@@ -2402,7 +2402,7 @@ int wiringPiSetup (void)
 	}
 // Open the master /dev/memory device
 
-  if ((fd = open ("/dev/mem", O_RDWR | O_SYNC | O_CLOEXEC) ) < 0)
+  if ((fd = open ("/dev/mem", O_RDWR | O_SYNC) ) < 0)
     return wiringPiFailure (WPI_ALMOST, "wiringPiSetup: Unable to open /dev/mem: %s\n", strerror (errno)) ;
 		
 		if(boardRev == 3)

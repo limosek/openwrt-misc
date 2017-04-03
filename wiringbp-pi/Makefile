@@ -17,7 +17,7 @@ define Package/wiringbp-pi
   CATEGORY:=Utilities
   TITLE:=WiringBP
   MAINTAINER:=Gerhard Bertelsmann
-  DEPENDS:=
+  DEPENDS:= + libpthread.so
 endef
 
 define Package/wiringbp-pi/description
